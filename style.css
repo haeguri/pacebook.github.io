@@ -2,6 +2,19 @@ html, body, main, div.background-opacity {
   height:100%;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
 footer {
   color: #fff;
 }
@@ -15,13 +28,17 @@ footer .sticky-msg {
   padding-bottom:30px;
 }
 
-footer div.container-fluid {
+footer div.sign {
   background-color: #000 !important;
   text-align: center;
-  height:200px;
+  height:100px;
+  padding-top:30px;
+  padding-bottom:30px;
 }
 
 nav { margin-bottom: 0 !important; }
+
+body { padding-top: 70px; }
 
 div.background-opacity {
   width:100%;
@@ -42,17 +59,77 @@ div.navbar-collapse li a, a.navbar-brand{
 
 body {
   background-image:url("https://c1.staticflickr.com/1/605/31763152335_661d3ee4c7_o.jpg");
-  background-position: 50% 50%;
-  background-size: 200%;
+  background-position: 0 0;
+  background-size: 300%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 section {
   margin-top: 20px;
-  background-color: #c0c0c0;
+  margin-bottom: 20px;
+  background-color: #e5e5e5;
   min-height:50%;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 2px;
+}
+
+.item .cover{
+    position: relative;
+}
+
+.item img {
+  border: solid 1px #a2a2a2;
+  width: 100%;
+}
+
+.item .transp-box {
+    position: absolute;
+    top: 0;
+    padding: inherit;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.item .transp-box p {
+    width: 100%;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.profile {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#about {
+    text-align: center;
+}
+
+.intro {
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        background-size: 400%;
+    }
+}
+
+hr {
+    width: 30%;
+    height: 2px;
+    border-top: 2px solid #ff3333;
+    border-radius: 1px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
